@@ -45,7 +45,7 @@ This project is developed to control the Create3 robot with ROS2 using custom na
 2. **Copy the `create3_navigation_task` Folder**:
     - Copy the `create3_navigation_task` directory into the `create3_sim/irobot_create_gazebo` folder:
       ```bash
-      cp -r path/to/your/create3_navigation_task create3_sim/irobot_create_gazebo/
+      cp -r path/to/your/create3_navigation_task path/to/your/create3_sim/irobot_create_gazebo/
       ```
 
 3. **Set the Ignition Version**:
@@ -85,7 +85,7 @@ This project is developed to control the Create3 robot with ROS2 using custom na
 ## Navigation Logic
 
 ### 1. **Undocking and Waypoint Navigation**
-   The robot starts by undocking and navigates through waypoints defined in an S-shape pattern, based on the `target_pose.yaml` configuration file.
+   The robot starts by undocking and navigates through waypoints defined in an S-shape pattern, in order to reach the target defined in the `target_pose.yaml` configuration file.
 
 ### 2. **360-degree Docking Station Scan**
    After reaching the final waypoint, the robot rotates to perform a 360-degree scan for the docking station. If detected, it proceeds to dock.
